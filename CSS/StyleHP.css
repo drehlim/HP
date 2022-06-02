@@ -1,0 +1,657 @@
+#meunu{
+    
+}
+
+
+
+body{
+    font-family: Nunito, sans-serif;
+    color: #1c1c1c;
+}
+h1, h2, h3 {
+    font-family: Asap, sans-serif;
+    color: #000000;
+}
+
+.logo {
+    width: 130px;
+}
+
+.botao {
+    color: #000;
+    text-decoration: none;
+    padding: 10px, 30px;
+    background-color: #e8b970;
+    font-size: .9em;
+    border-radius: 3px ;
+    margin-top: 10%;
+}
+#casa{
+
+}
+/* Navegação */
+
+    #cabecalho input:focus ~ label,
+    #cabecalho input:valid ~label{
+    top: -20px;
+    left: 0;
+    color: #e8b970;
+    font-size: 12px;
+}
+
+#cabecalho form a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #e8b970;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .6s;
+    margin-top: 40px;
+    letter-spacing: 4px;
+}
+#cabecalho a:hover{
+    background: #e8b970;
+    color: #fff;
+    border-radius: 5px;
+   
+    box-shadow: 0 0 5px #e8b970,
+                0 0 25px #e8b970,
+                0 0 30px #e8b970,
+                0 0 10px #e8b970;
+                        
+}
+#cabecalho a span {
+    position: absolute;
+    display: block;
+}
+#cabecalho a span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #e8b970);
+   
+}
+ 
+@keyframes btn-anim1 {
+    0%{
+        left: -100%;
+    }
+    50%, 100% {
+        left: 100%;
+    }
+}
+#cabecalho a span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #e8b970);
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: .25s;
+}
+@keyframes btn-anim2 {
+    0%{
+        top: -100%;
+    }
+    50%, 100% {
+        top: 100%;
+    }
+}
+#cabecalho a span:nth-child(3) {
+    bottom: 0%;
+    right: 100;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #e8b970);
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: .5s;
+}
+@keyframes btn-anim3 {
+    0%{
+        right: -100%;
+    }
+    50%, 100% {
+        right: 100%;
+    }
+}
+#cabecalho a span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #e8b970);
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: .75s;
+}
+@keyframes btn-anim4 {
+    0%{
+        bottom: -100%;
+    }
+    50%, 100% {
+        bottom: 100%;
+    }
+}
+#casa{
+    color: #ffffff;
+    text-align: center;
+}
+.agadois{
+    color: #e8b970;
+}
+.negrito{
+    color: #e8b970;
+}
+
+
+nav{
+    display:flex ;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000000;
+    overflow:hidden;
+}
+nav a .ativo{
+    background-color: #c39e61;
+    color: #ffffff;
+}
+
+
+html{
+    background-color: rgb(0, 0, 0);
+}
+
+nav > a {
+
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 32px;
+    font-family: Yellowtail, serif;
+
+
+}
+
+nav ul{
+    display:flex ;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+nav ul li{
+    text-align: center;
+    width:100%;
+}
+
+
+ nav ul li a{
+
+    display: inline-block;
+    padding: 10px 0;
+    width: 100%;
+    text-decoration: none;
+    color: #ffffff;
+ }
+
+ /* Cabeçalho */
+.containertwo{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    color:#ffffff;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.containertwo p{
+    text-align: right;
+}
+
+ header img{
+     width: 10%;
+ }
+
+ header h1 {
+     color: #ffff;
+
+ }
+
+ header p {
+     margin-bottom: 2em;/*Margem dinâmica a partir da posiçao que iniciar*/
+
+ }
+
+ #Sobre {
+    display:flex ;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px, 10px, 20px, 20px ;
+    background-color: #000000;
+    color: #ffffff;
+ }
+
+ #Sobre h2{
+     color: #ffffff;
+ }
+
+ #Sobre p{
+     margin-bottom: 2.5em ;
+     max-width: 1000px;
+ }
+
+ #Sobre .botao{
+     background-color: #f1f1f1;
+     color: #1c1c1c;
+ }
+
+ /*Serviços*/
+ .harry{
+     color: #5d392c;
+ }
+ .hermi{
+     color: #b2937f;
+ }
+ .rony{
+     color: #ad3d22;
+ }
+ #titulou{
+    color: #e8b970;
+ }
+
+
+
+ #Serviços {
+    color: #e8b970;
+    display:flex ;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+
+ }
+
+ #Serviços div{
+    display:flex ;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+ }
+ #Serviços img{
+    width: 100%;
+ }
+ 
+ /*Fotos*/
+
+ #Fotos{
+    display:flex ;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+ }
+
+ #Fotos h2{
+     margin-bottom: 20px;
+ }
+
+ #Fotos img{
+     width: 100% ;
+ }
+
+ /*Contatos*/
+ 
+ #Contatos{
+    display:flex ;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+ }
+
+ #Contatos h2{
+     color: #000000;
+ }
+
+ /*Rodapé*/
+
+ footer{
+
+    text-align: center;
+    padding: 10px;
+    color: #000000;
+    color: #ffffff;
+ }
+
+ footer a{
+     text-decoration: none;
+     color: #e8b970;
+
+ }
+
+ @media screen  and (min-width: 768px) {
+
+    /*nav*/
+    nav {
+        flex-direction: row;
+        justify-content:space-around;
+    }
+
+    nav ul{
+        flex-direction: row;
+        width: 70%;
+    }
+
+    /*Cabeçalho*/
+   
+    header{
+        height: 600px;
+        height: 60vh;
+        justify-content: center;
+    }
+    /*Sobre*/
+    #Sobre {
+        height: 250px ;
+        height: 30vh;
+        justify-content: center;
+        min-height: 250px;
+    }
+    /*Serviços*/
+
+    #Serviços {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    #Serviços h2 {
+        text-align: center;
+        width: 100%;
+    }
+
+    #Serviços div {
+        flex-grow: 1;
+        flex-basis: 150px;
+        padding: 0 10px;
+    }
+
+    /*Fotos*/
+
+    #Fotos {
+        flex-direction:row ;
+        flex-wrap: wrap;
+    }
+    #Fotos h2{
+        width: 100%;
+        text-align: center;
+    }
+    #Fotos img{
+        width: 33.3333333%;
+    }
+    /*Contatos*/
+    #Contatos {
+        flex-direction: row;
+        flex-wrap:wrap;
+        justify-content: space-around;
+        max-width: 500px;
+        margin: 0 auto;
+
+    }
+    #Contatos h2, #Contatos p {
+
+        width: 100%;
+    }  
+.apresentacao{
+    padding-right: 0;
+}
+ }
+ .polaroid{
+    width: 10.3333333%;
+ }
+ element style{
+     flex-basis: 100%;
+ }
+
+ @media (min-width: 782px){}
+.wp-block-columns:not(.is-not-stacked-on-mobile)>.wp-block-column[style*=flex-basis] {
+    flex-grow: 0;
+}
+@media (min-width: 782px){}
+.wp-block-columns:not(.is-not-stacked-on-mobile)>.wp-block-column {
+    flex-basis: 0;
+    flex-grow: 1;
+}
+.wp-block-column {
+    flex-grow: 1;
+    min-width: 0;
+    word-break: break-word;
+    overflow-wrap: break-word;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+div {
+    display: block;
+}
+.tagdiv-type {
+    font-size: 15px;
+    line-height: 1.74;
+    color: #222;
+}
+/* SLIDES DO HP */
+* { margin: 0; padding: 0; }
+.slider {
+    display: block;
+    height: 293px;
+    width: 600px;
+    margin: auto;
+    margin-top: 20px;
+    position: relative;
+}
+
+.slider li {
+    list-style: none;
+    position: absolute;
+}
+
+.slider img {
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    vertical-align: top;
+}
+.slider input {
+    display: none;
+}
+.slider label {
+    background-color: #000;
+    bottom: 10px;
+    cursor: pointer;
+    display: block;
+    height: 10px;
+    position: absolute;
+    width: 10px;
+    z-index: 10;
+}
+
+.slider li:nth-child(1) label {
+    left: 10px;
+}
+
+.slider li:nth-child(2) label {
+    left: 40px;
+}
+
+.slider li:nth-child(3) label {
+    left: 70px;
+}
+.slider img {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.slider li input:checked ~ img {
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
+}
+
+
+
+#FeL{
+    text-align: center;
+}
+
+
+.FozYP{
+   
+    margin: 20px;
+}
+   
+.naaa{
+    margin-left: 10px;
+}
+
+.ladoalado{
+    display: flex;
+}
+
+#pf1{
+    color: #670b0f;
+}
+#pf2{
+    color: #670b0f;
+}
+#pf3
+{
+    color: #670b0f;
+}
+
+#cs{
+    color: #036443;
+}
+#pa{
+    color: #503390;
+}
+#cf{
+    color: #1a797b;
+}
+#of{
+    color: #fa580f;
+}
+#pm{
+    color: #ef5a42;
+}
+#rm{
+    color: #0e5a36;
+}
+
+#videos {
+    display: flex;
+    align-items: center;
+}
+
+    
+
+#videos h2{
+    color: #ffffff;
+}
+.container{
+    margin: auto;
+    margin: 20px;
+    text-align: center;
+   
+
+}
+.filmes img{
+    width: 100%;
+}
+.linha{
+    color: #e8b970;
+}
+.fenix{
+    color: #ffffff;
+    padding-left: 50px;
+}
+.videoum{
+    padding-left: 0;
+}
+.agadois{
+    text-align: center;
+}
+#meno{
+    padding: 15px;
+}
+.container .um{
+    position: absolute;
+    top: 544%;
+    border-left: 0ch;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 5);
+    padding: 10px;
+    padding-right: 50px;
+    
+}
+
+.container .dois{
+    position: absolute;
+    top: 544%;
+    left: 33%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 5);
+    padding: 10px;
+    
+}
+.container .tres{
+    position: absolute;
+    top: 544%;
+    right: 0;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 5);
+    padding: 10px;
+    
+}
+ iframe {
+   padding-left: 100px;
+}
+
+
+.FixoNoTopo{
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
